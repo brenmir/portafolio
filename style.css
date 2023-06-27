@@ -1,0 +1,273 @@
+*{
+    font-family: 'Roboto', 'Poppins', sans-serif;
+    margin: 0%;
+    
+}
+
+p{
+    font-size: 16px;
+}
+
+body {
+    background-color: #ececec;
+    flex-wrap: wrap;
+}
+
+header{
+    width: 100%;
+    background-color: #131313;
+    height: 85px;
+    display: flex;
+    align-self: center;
+}
+
+.header {
+    width: 50%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+
+.nav{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav a{
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: white;
+    line-height: 40px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.nav a:hover {
+    background-color: #ff005d;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+  }
+
+.item {
+    color: snow;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.bg-img{
+    background: url("img/bg.jpg") center center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    opacity: 0.95;
+    filter: grayscale(1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.section1 a{
+    font-family: 'Poppins';
+    text-decoration: none;
+    font-weight: 600;
+    background-color: #232323;
+    color: #f1f1f1;
+    line-height: 40px;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin-top: 25px;
+}
+
+.section1 a:hover{
+    background-color: #777;
+    color: #f1f1f1;
+    padding: 5px 20px;
+    display: inline-block;
+  }
+
+.section1 h1 {
+    color: snow;
+    font-size: 80px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px #232323;
+    letter-spacing: 5px;
+}
+
+.section1 p {
+    color: #fff;
+    text-shadow: 1px 1px 1px #00ffe1;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 10px;
+}
+
+.item1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item1 img {
+    width: 50px;
+    margin-top: 20px;
+}
+
+.section2 {
+    width: 100%;
+    height: 100px;
+  }
+
+.ImgThumbnail {
+    border-radius: 10px;
+    cursor: zoom-in;
+    transition: 0.3s;
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+    margin-left: 30px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.ImgThumbnail:hover{
+    opacity: 50%;
+    filter: grayscale(1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 70px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modalImage {
+    margin: auto;
+    display: block;
+    width: 50%;
+    max-width: 50%;
+}
+
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff005d;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    margin-top: 50px;
+    background-color: #131313;
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+footer a {
+    text-decoration: none;
+    color: snow;
+}
+
+.f1, .f2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f1 h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ff005d;
+    letter-spacing: 5px;
+}
+
+.f1 p {
+    font-size: smaller;
+    text-align: center;
+    padding-top: 10px;
+    line-height: 1.3;
+}
+
+.snsimg {
+    display: flex;
+    gap: 20px;
+}
+
+.sns {
+    width: 35px;
+    height: 35px;
+}
+
+.sns:hover {
+    background-color: #00ffe1;
+    padding: 2px 2px;
+    border-radius: 50%;
+}
+
+.copyright{
+    width: 100%;
+    height: 20px;
+    background-color: #232323;
+    color: snow;
+    word-spacing: 2px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: x-small;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.copyright a { 
+    color: snow;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.copyright a:hover { color:#ff005d}
+
+::selection {
+    background: #ff005d;
+  }
+
+@media only screen and (max-width: 700px) {
+    .modalImage {
+        width: 100%;
+    }
+}
